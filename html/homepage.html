@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <link rel="stylesheet" href="../css/homepage.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="logo">My Shop</a>
+      <ul class="navbar-links">
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="login.html">logout</a></li>
+        <li><a href="cart.html">&#128722</a></li>
+        <div class="cart">
+            +<span id="cart-count">0</span>
+          </div>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="content">
+
+    <!-- Search and Filter Section -->
+    <input type="text" id="search" placeholder="Search for products..." oninput="applySearchAndFilter()">
+    <select id="category-filter" onchange="applySearchAndFilter()">
+      <option value="">Select Category</option>
+      <option value="electronics">Electronics</option>
+      <option value="jewelery">Jewelery</option>
+      <option value="men's clothing">Men's Clothing</option>
+      <option value="women's clothing">Women's Clothing</option>
+    </select>
+
+    <!-- Product List Display -->
+    <div id="product-list"></div>
+  </div>
+
+  <script src="../js/homepage.js"></script>
+</body>
+</html>
