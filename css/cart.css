@@ -1,9 +1,11 @@
-/* Cart Page Styles */
+
 .cart-page {
     padding: 20px;
     font-family: Arial, sans-serif;
   }
-  
+  body {
+    margin-top: 60px; 
+  }
   .cart-page h1 {
     text-align: center;
   }

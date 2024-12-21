@@ -1,7 +1,13 @@
-  /* Navbar Styles */
+
   .navbar {
-    background-color: #333;
-    padding: 10px 20px;
+    position: fixed; 
+  top: 0;         
+  left: 0;      
+  z-index: 1000;
+  width: 100%;    
+  background-color: #333; 
+  padding: 10px 20px; 
+  box-sizing: border-box; 
   }
   
   .navbar-container {
@@ -125,13 +131,13 @@
   /* Responsive Styles */
   @media (max-width: 1200px) {
     #product-list {
-      grid-template-columns: repeat(2, 1fr);  /* Two products per row on medium screens */
+      grid-template-columns: repeat(2, 1fr);  
     }
   }
   
   @media (max-width: 768px) {
     #product-list {
-      grid-template-columns: 1fr;  /* One product per row on small screens */
+      grid-template-columns: 1fr; 
     }
   }
   
